@@ -1,0 +1,82 @@
+[2025-02-20T07:25:46.441+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-20T07:25:46.542+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.parser_for_Yandex scheduled__2025-02-19T00:00:00+00:00 [queued]>
+[2025-02-20T07:25:46.547+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.parser_for_Yandex scheduled__2025-02-19T00:00:00+00:00 [queued]>
+[2025-02-20T07:25:46.547+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-02-20T07:25:46.554+0000] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): parser_for_Yandex> on 2025-02-19 00:00:00+00:00
+[2025-02-20T07:25:46.560+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'parser_for_Yandex', 'scheduled__2025-02-19T00:00:00+00:00', '--job-id', '1078', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpv4a4tczb']
+[2025-02-20T07:25:46.561+0000] {standard_task_runner.py:105} INFO - Job 1078: Subtask parser_for_Yandex
+[2025-02-20T07:25:46.560+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=244) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-20T07:25:46.562+0000] {standard_task_runner.py:72} INFO - Started process 248 to run task
+[2025-02-20T07:25:46.603+0000] {task_command.py:467} INFO - Running <TaskInstance: pipeline.parser_for_Yandex scheduled__2025-02-19T00:00:00+00:00 [running]> on host 5f8091faf500
+[2025-02-20T07:25:46.656+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='parser_for_Yandex' AIRFLOW_CTX_EXECUTION_DATE='2025-02-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-19T00:00:00+00:00'
+[2025-02-20T07:25:46.658+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-20T07:25:46.658+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-20T07:25:46.659+0000] {logging_mixin.py:190} INFO - Current task name:parser_for_Yandex state:running start_date:2025-02-20 07:25:46.542773+00:00
+[2025-02-20T07:25:46.659+0000] {logging_mixin.py:190} INFO - Dag name:pipeline and current dag run status:running
+[2025-02-20T07:25:46.659+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-20T07:25:46.660+0000] {parser_2.py:25} INFO - Open webdriver_remote
+[2025-02-20T07:25:51.220+0000] {parser_2.py:37} INFO - Webdriver opened
+[2025-02-20T07:25:51.947+0000] {parser_2.py:42} INFO - success
+[2025-02-20T07:25:52.201+0000] {parser_2.py:49} INFO - Found 24 review elements
+[2025-02-20T07:25:52.710+0000] {parser_2.py:56} INFO - Data collected successfully
+[2025-02-20T07:25:52.732+0000] {logging_mixin.py:190} INFO -                                               comment drag_name
+0   Достоинства: Доступная цена, легко найти в люб...  афобазол
+1   Достоинства: Таблетка небольшая по форме, удоб...  афобазол
+2   Достоинства: Самое главное - действительно пом...  афобазол
+3   Хороший отечественный препарат, предназначенны...  афобазол
+4   Каждый год осенью мир становился для меня каки...  афобазол
+5   Очень рада, что в свое время решила принимать ...  афобазол
+6   На меня Афобазол производит возбуждающий эффек...  афобазол
+7   Лично мне помогает успокоиться, когда есть тре...  афобазол
+8   Достоинства: Работает. Цена ок по сравнению с ...  афобазол
+9   2 месяца назад уволили с работы по непонятной ...  афобазол
+10  Достоинства: Купила Афобазол с надеждой успоко...  афобазол
+11  Отличный безрецептурный противотревожный препа...  афобазол
+12  Достоинства: хорошо помогает, недорогой\n\nНед...  афобазол
+13  Достоинства: + Действует. Но нужно достаточно ...  афобазол
+14  Если принимать строго по инструкции и хотя бы ...  афобазол
+15  Наконец-то дошла до того, чтобы бросить курить...  афобазол
+16  Афобазол - единственный лекарственный препарат...  афобазол
+17  Иногда я принимаю Афобазол для поддержания пси...  афобазол
+18  Я довольно тяжело переживаю ПМС. За пару недел...  афобазол
+19  Достоинства: хорошо восстанавливает нервы, выр...  афобазол
+20  В наши времена без таблеток от тревоги никак. ...  афобазол
+21  Да, временами приходится спасаться именно этим...  афобазол
+22  Достоинства: успокоительный эфект есть употреб...  афобазол
+23  С такой работой как у меня без Афобазола иногд...  афобазол
+[2025-02-20T07:25:52.812+0000] {python.py:240} INFO - Done. Returned value was:                                               comment drag_name
+0   Достоинства: Доступная цена, легко найти в люб...  афобазол
+1   Достоинства: Таблетка небольшая по форме, удоб...  афобазол
+2   Достоинства: Самое главное - действительно пом...  афобазол
+3   Хороший отечественный препарат, предназначенны...  афобазол
+4   Каждый год осенью мир становился для меня каки...  афобазол
+5   Очень рада, что в свое время решила принимать ...  афобазол
+6   На меня Афобазол производит возбуждающий эффек...  афобазол
+7   Лично мне помогает успокоиться, когда есть тре...  афобазол
+8   Достоинства: Работает. Цена ок по сравнению с ...  афобазол
+9   2 месяца назад уволили с работы по непонятной ...  афобазол
+10  Достоинства: Купила Афобазол с надеждой успоко...  афобазол
+11  Отличный безрецептурный противотревожный препа...  афобазол
+12  Достоинства: хорошо помогает, недорогой\n\nНед...  афобазол
+13  Достоинства: + Действует. Но нужно достаточно ...  афобазол
+14  Если принимать строго по инструкции и хотя бы ...  афобазол
+15  Наконец-то дошла до того, чтобы бросить курить...  афобазол
+16  Афобазол - единственный лекарственный препарат...  афобазол
+17  Иногда я принимаю Афобазол для поддержания пси...  афобазол
+18  Я довольно тяжело переживаю ПМС. За пару недел...  афобазол
+19  Достоинства: хорошо восстанавливает нервы, выр...  афобазол
+20  В наши времена без таблеток от тревоги никак. ...  афобазол
+21  Да, временами приходится спасаться именно этим...  афобазол
+22  Достоинства: успокоительный эфект есть употреб...  афобазол
+23  С такой работой как у меня без Афобазола иногд...  афобазол
+[2025-02-20T07:25:52.848+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-20T07:25:52.849+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=parser_for_Yandex, run_id=scheduled__2025-02-19T00:00:00+00:00, execution_date=20250219T000000, start_date=20250220T072546, end_date=20250220T072552
+[2025-02-20T07:25:52.862+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-02-20T07:25:52.862+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-02-20T07:25:52.863+0000] {logging_mixin.py:190} INFO - Dag name:pipeline queued_at:2025-02-20 07:25:40.359052+00:00
+[2025-02-20T07:25:52.863+0000] {logging_mixin.py:190} INFO - Task hostname:5f8091faf500 operator:_PythonDecoratedOperator
+[2025-02-20T07:25:52.873+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-20T07:25:52.898+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-20T07:25:52.899+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

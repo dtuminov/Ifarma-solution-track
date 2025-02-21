@@ -1,0 +1,76 @@
+[2025-02-20T06:58:23.496+0000] {processor.py:186} INFO - Started process (PID=41) to work on /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:58:23.498+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/operators/analitics/process_and_label_data.py for tasks to queue
+[2025-02-20T06:58:23.500+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:58:23.500+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:58:23.510+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:58:23.509+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/operators/analitics/process_and_label_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/operators/analitics/process_and_label_data.py", line 7, in <module>
+    from dags.operators.analitics.yandexGPTdemo import get_response
+ModuleNotFoundError: No module named 'dags'
+[2025-02-20T06:58:23.511+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:58:23.531+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/operators/analitics/process_and_label_data.py took 0.040 seconds
+[2025-02-20T06:58:54.468+0000] {processor.py:186} INFO - Started process (PID=113) to work on /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:58:54.469+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/operators/analitics/process_and_label_data.py for tasks to queue
+[2025-02-20T06:58:54.471+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:58:54.471+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:58:54.478+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:58:54.477+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/operators/analitics/process_and_label_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/operators/analitics/process_and_label_data.py", line 7, in <module>
+    from dags.operators.analitics.yandexGPTdemo import get_response
+ModuleNotFoundError: No module named 'dags'
+[2025-02-20T06:58:54.479+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:58:54.496+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/operators/analitics/process_and_label_data.py took 0.035 seconds
+[2025-02-20T06:59:25.330+0000] {processor.py:186} INFO - Started process (PID=179) to work on /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:59:25.331+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/operators/analitics/process_and_label_data.py for tasks to queue
+[2025-02-20T06:59:25.333+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:59:25.333+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:59:25.339+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:59:25.338+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/operators/analitics/process_and_label_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/operators/analitics/process_and_label_data.py", line 7, in <module>
+    from dags.operators.analitics.yandexGPTdemo import get_response
+ModuleNotFoundError: No module named 'dags'
+[2025-02-20T06:59:25.340+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:59:25.357+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/operators/analitics/process_and_label_data.py took 0.033 seconds
+[2025-02-20T06:59:56.140+0000] {processor.py:186} INFO - Started process (PID=245) to work on /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:59:56.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/operators/analitics/process_and_label_data.py for tasks to queue
+[2025-02-20T06:59:56.145+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:59:56.145+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:59:56.153+0000] {logging_mixin.py:190} INFO - [2025-02-20T06:59:56.152+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/operators/analitics/process_and_label_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/operators/analitics/process_and_label_data.py", line 7, in <module>
+    from dags.operators.analitics.yandexGPTdemo import get_response
+ModuleNotFoundError: No module named 'dags'
+[2025-02-20T06:59:56.153+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T06:59:56.171+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/operators/analitics/process_and_label_data.py took 0.039 seconds
+[2025-02-20T07:00:26.388+0000] {processor.py:186} INFO - Started process (PID=311) to work on /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T07:00:26.390+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/operators/analitics/process_and_label_data.py for tasks to queue
+[2025-02-20T07:00:26.393+0000] {logging_mixin.py:190} INFO - [2025-02-20T07:00:26.393+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T07:00:26.411+0000] {logging_mixin.py:190} INFO - [2025-02-20T07:00:26.408+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/operators/analitics/process_and_label_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/operators/analitics/process_and_label_data.py", line 7, in <module>
+    from dags.operators.analitics.yandexGPTdemo import get_response
+ModuleNotFoundError: No module named 'dags'
+[2025-02-20T07:00:26.412+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T07:00:26.430+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/operators/analitics/process_and_label_data.py took 0.049 seconds
+[2025-02-20T07:00:40.242+0000] {processor.py:186} INFO - Started process (PID=371) to work on /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T07:00:40.242+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/operators/analitics/process_and_label_data.py for tasks to queue
+[2025-02-20T07:00:40.244+0000] {logging_mixin.py:190} INFO - [2025-02-20T07:00:40.244+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T07:00:40.245+0000] {logging_mixin.py:190} INFO - [2025-02-20T07:00:40.245+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/operators/analitics/process_and_label_data.py assumed to contain no DAGs. Skipping.
+[2025-02-20T07:00:40.245+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/operators/analitics/process_and_label_data.py
+[2025-02-20T07:00:40.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/operators/analitics/process_and_label_data.py took 0.019 seconds

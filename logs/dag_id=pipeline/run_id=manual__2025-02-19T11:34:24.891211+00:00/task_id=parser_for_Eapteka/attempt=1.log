@@ -1,0 +1,62 @@
+[2025-02-19T11:34:26.973+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-19T11:34:26.985+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.parser_for_Eapteka manual__2025-02-19T11:34:24.891211+00:00 [queued]>
+[2025-02-19T11:34:26.992+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.parser_for_Eapteka manual__2025-02-19T11:34:24.891211+00:00 [queued]>
+[2025-02-19T11:34:26.995+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-02-19T11:34:27.102+0000] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): parser_for_Eapteka> on 2025-02-19 11:34:24.891211+00:00
+[2025-02-19T11:34:27.107+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=231) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-19T11:34:27.110+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'parser_for_Eapteka', 'manual__2025-02-19T11:34:24.891211+00:00', '--job-id', '896', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpeklqtj9y']
+[2025-02-19T11:34:27.114+0000] {standard_task_runner.py:72} INFO - Started process 235 to run task
+[2025-02-19T11:34:27.114+0000] {standard_task_runner.py:105} INFO - Job 896: Subtask parser_for_Eapteka
+[2025-02-19T11:34:27.160+0000] {task_command.py:467} INFO - Running <TaskInstance: pipeline.parser_for_Eapteka manual__2025-02-19T11:34:24.891211+00:00 [running]> on host 23903a4a7553
+[2025-02-19T11:34:27.223+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='parser_for_Eapteka' AIRFLOW_CTX_EXECUTION_DATE='2025-02-19T11:34:24.891211+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-19T11:34:24.891211+00:00'
+[2025-02-19T11:34:27.225+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-19T11:34:27.225+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-19T11:34:27.225+0000] {logging_mixin.py:190} INFO - Current task name:parser_for_Eapteka state:running start_date:2025-02-19 11:34:26.986047+00:00
+[2025-02-19T11:34:27.225+0000] {logging_mixin.py:190} INFO - Dag name:pipeline and current dag run status:running
+[2025-02-19T11:34:27.226+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-19T11:34:27.226+0000] {parser_1.py:27} INFO - Open webdriver_remote
+[2025-02-19T11:34:47.702+0000] {parser_1.py:39} INFO - Webdriver opened
+[2025-02-19T11:35:54.242+0000] {parser_1.py:63} ERROR - Error occurred: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.78)
+Stacktrace:
+#0 0xaaaae63c7d44 <unknown>
+#1 0xaaaae60ee374 <unknown>
+#2 0xaaaae60e8a34 <unknown>
+#3 0xaaaae60dc274 <unknown>
+#4 0xaaaae60dd518 <unknown>
+#5 0xaaaae60dc5e4 <unknown>
+#6 0xaaaae60dbf64 <unknown>
+#7 0xaaaae60dbe44 <unknown>
+#8 0xaaaae60da4bc <unknown>
+#9 0xaaaae60da7b8 <unknown>
+#10 0xaaaae60f13ec <unknown>
+#11 0xaaaae6168848 <unknown>
+#12 0xaaaae6168400 <unknown>
+#13 0xaaaae61214a4 <unknown>
+#14 0xaaaae61220e0 <unknown>
+#15 0xaaaae6395ac0 <unknown>
+#16 0xaaaae6398a64 <unknown>
+#17 0xaaaae6398630 <unknown>
+#18 0xaaaae6386d6c <unknown>
+#19 0xaaaae6399128 <unknown>
+#20 0xaaaae6371010 <unknown>
+#21 0xaaaae63b8550 <unknown>
+#22 0xaaaae63b8758 <unknown>
+#23 0xaaaae63c7250 <unknown>
+#24 0xffff94d0ee58 <unknown>
+#25 0xffff94d77f9c <unknown>
+
+[2025-02-19T11:35:54.337+0000] {python.py:240} INFO - Done. Returned value was: Empty DataFrame
+Columns: []
+Index: []
+[2025-02-19T11:35:54.385+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-19T11:35:54.385+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=parser_for_Eapteka, run_id=manual__2025-02-19T11:34:24.891211+00:00, execution_date=20250219T113424, start_date=20250219T113426, end_date=20250219T113554
+[2025-02-19T11:35:54.400+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-02-19T11:35:54.401+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-02-19T11:35:54.401+0000] {logging_mixin.py:190} INFO - Dag name:pipeline queued_at:2025-02-19 11:34:24.905742+00:00
+[2025-02-19T11:35:54.401+0000] {logging_mixin.py:190} INFO - Task hostname:23903a4a7553 operator:_PythonDecoratedOperator
+[2025-02-19T11:35:54.413+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-19T11:35:54.436+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-19T11:35:54.437+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

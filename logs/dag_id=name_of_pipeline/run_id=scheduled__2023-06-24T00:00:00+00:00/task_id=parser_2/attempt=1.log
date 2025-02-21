@@ -1,0 +1,29 @@
+[2025-02-17T20:19:50.703+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-17T20:19:50.855+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: name_of_pipeline.parser_2 scheduled__2023-06-24T00:00:00+00:00 [queued]>
+[2025-02-17T20:19:50.901+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: name_of_pipeline.parser_2 scheduled__2023-06-24T00:00:00+00:00 [queued]>
+[2025-02-17T20:19:50.909+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-02-17T20:19:51.188+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): parser_2> on 2023-06-24 00:00:00+00:00
+[2025-02-17T20:19:51.241+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2559) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-17T20:19:51.290+0000] {standard_task_runner.py:72} INFO - Started process 2595 to run task
+[2025-02-17T20:19:51.295+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'name_of_pipeline', 'parser_2', 'scheduled__2023-06-24T00:00:00+00:00', '--job-id', '791', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpe723ragt']
+[2025-02-17T20:19:51.305+0000] {standard_task_runner.py:105} INFO - Job 791: Subtask parser_2
+[2025-02-17T20:19:51.608+0000] {task_command.py:467} INFO - Running <TaskInstance: name_of_pipeline.parser_2 scheduled__2023-06-24T00:00:00+00:00 [running]> on host f4228ad55513
+[2025-02-17T20:19:52.249+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='name_of_pipeline' AIRFLOW_CTX_TASK_ID='parser_2' AIRFLOW_CTX_EXECUTION_DATE='2023-06-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-24T00:00:00+00:00'
+[2025-02-17T20:19:52.269+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-17T20:19:52.273+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-17T20:19:52.279+0000] {logging_mixin.py:190} INFO - Current task name:parser_2 state:running start_date:2025-02-17 20:19:50.857180+00:00
+[2025-02-17T20:19:52.280+0000] {logging_mixin.py:190} INFO - Dag name:name_of_pipeline and current dag run status:running
+[2025-02-17T20:19:52.292+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-17T20:19:52.338+0000] {pipeline.py:22} INFO - Starting parser 2
+[2025-02-17T20:19:52.347+0000] {logging_mixin.py:190} INFO - Парсер 2 выполняется
+[2025-02-17T20:19:52.367+0000] {python.py:240} INFO - Done. Returned value was: Данные от парсера 2
+[2025-02-17T20:19:54.472+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-17T20:19:54.478+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=name_of_pipeline, task_id=parser_2, run_id=scheduled__2023-06-24T00:00:00+00:00, execution_date=20230624T000000, start_date=20250217T201950, end_date=20250217T201954
+[2025-02-17T20:19:54.718+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-02-17T20:19:54.728+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-02-17T20:19:54.734+0000] {logging_mixin.py:190} INFO - Dag name:name_of_pipeline queued_at:2025-02-17 20:18:36.950511+00:00
+[2025-02-17T20:19:54.736+0000] {logging_mixin.py:190} INFO - Task hostname:f4228ad55513 operator:PythonOperator
+[2025-02-17T20:19:54.893+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-17T20:19:55.113+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

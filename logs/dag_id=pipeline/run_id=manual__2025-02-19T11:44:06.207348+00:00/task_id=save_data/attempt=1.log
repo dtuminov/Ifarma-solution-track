@@ -1,0 +1,44 @@
+[2025-02-19T11:44:12.321+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-19T11:44:12.333+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.save_data manual__2025-02-19T11:44:06.207348+00:00 [queued]>
+[2025-02-19T11:44:12.424+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.save_data manual__2025-02-19T11:44:06.207348+00:00 [queued]>
+[2025-02-19T11:44:12.425+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-02-19T11:44:12.430+0000] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2025-02-19 11:44:06.207348+00:00
+[2025-02-19T11:44:12.434+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=222) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-19T11:44:12.435+0000] {standard_task_runner.py:72} INFO - Started process 224 to run task
+[2025-02-19T11:44:12.436+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'save_data', 'manual__2025-02-19T11:44:06.207348+00:00', '--job-id', '922', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp4q5lib5j']
+[2025-02-19T11:44:12.437+0000] {standard_task_runner.py:105} INFO - Job 922: Subtask save_data
+[2025-02-19T11:44:12.461+0000] {task_command.py:467} INFO - Running <TaskInstance: pipeline.save_data manual__2025-02-19T11:44:06.207348+00:00 [running]> on host 23903a4a7553
+[2025-02-19T11:44:12.527+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-19T11:44:06.207348+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-19T11:44:06.207348+00:00'
+[2025-02-19T11:44:12.528+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-19T11:44:12.528+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-19T11:44:12.528+0000] {logging_mixin.py:190} INFO - Current task name:save_data state:running start_date:2025-02-19 11:44:12.333621+00:00
+[2025-02-19T11:44:12.529+0000] {logging_mixin.py:190} INFO - Dag name:pipeline and current dag run status:running
+[2025-02-19T11:44:12.529+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-19T11:44:12.529+0000] {safe_data.py:23} INFO - Starting to save data with 10 records.
+[2025-02-19T11:44:12.531+0000] {safe_data.py:25} INFO - final df:                                               Review
+0  Я мама двух маленьких детей, и постоянная уста...
+1  Недостатки: Не помогло. все время была сонливо...
+2  Я начала принимать Проспекту при астении по ре...
+3  Давненько хотела пропить что-то для улучшения ...
+4  Не знаю, что бы делала, если бы не узнала про ...
+5  Брали Проспекту дедушке, для улучшения памяти....
+6  Хвалю Проспекту, отлично помогает при СДВГ у р...
+7  Проспекту назначили папе после инсульта, у нег...
+8  Давала эти таблетки сыну, а то его неусидчивос...
+9  Искала хорошее средство для улучшения концентр...
+[2025-02-19T11:44:12.532+0000] {safe_data.py:33} INFO - File temp_file_for_data.txt exists. Attempting to read existing data.
+[2025-02-19T11:44:12.532+0000] {safe_data.py:38} INFO - Successfully read 12 existing records from temp_file_for_data.txt.
+[2025-02-19T11:44:12.533+0000] {safe_data.py:49} INFO - Added 10 new records to the existing data.
+[2025-02-19T11:44:12.533+0000] {safe_data.py:54} INFO - Successfully saved 22 records to temp_file_for_data.txt.
+[2025-02-19T11:44:12.534+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-19T11:44:12.539+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-19T11:44:12.539+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=save_data, run_id=manual__2025-02-19T11:44:06.207348+00:00, execution_date=20250219T114406, start_date=20250219T114412, end_date=20250219T114412
+[2025-02-19T11:44:12.552+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-02-19T11:44:12.553+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-02-19T11:44:12.553+0000] {logging_mixin.py:190} INFO - Dag name:pipeline queued_at:2025-02-19 11:44:06.220985+00:00
+[2025-02-19T11:44:12.553+0000] {logging_mixin.py:190} INFO - Task hostname:23903a4a7553 operator:_PythonDecoratedOperator
+[2025-02-19T11:44:12.577+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-19T11:44:12.587+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-19T11:44:12.587+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
