@@ -53,7 +53,7 @@ def parser_for_Yandex(medication_urls: dict) -> pd.DataFrame:
                 review_text = element.text
                 all_reviews.append({'comment': review_text, 'drag_name': drag_name})
 
-        logging.info("Data collected successfully")
+        logging.info(f"Data collected successfully for {drag_name}")
 
     except Exception as e:
         logging.error(f"Error occurred: {e}")
