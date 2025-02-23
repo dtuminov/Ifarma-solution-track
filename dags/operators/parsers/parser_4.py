@@ -17,7 +17,7 @@ logging.basicConfig(
 
 
 @task
-def parser_for_Zdravcity(medication_urls: dict) -> pd.DataFrame:
+def parser_for_Otzovik(medication_urls: dict) -> pd.DataFrame:
     logging.info("Open webdriver_remote")
 
     # Настройка опций для Chrome
@@ -43,7 +43,7 @@ def parser_for_Zdravcity(medication_urls: dict) -> pd.DataFrame:
 
             # Ожидаем загрузки элементов отзывов на странице
             elements = WebDriverWait(driver, 10).until(
-                EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div class="Review_review__Km6EV ProductReviews_reviews-list-review__XfUnE"'))
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div class="review-body-wrap"'))
             )
 
             logging.info(f"Found {len(elements)} review elements for {drag_name}")
