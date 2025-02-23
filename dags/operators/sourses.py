@@ -42,3 +42,12 @@ medication_urls_Otzovik = {
     'Тералиджен': 'https://otzovik.com/reviews/preparat_valenta_farmacevtika_teralidzhen_valenta/',
     'Инозин Пранобекс': 'https://otzovik.com/reviews/protivovirusniy_preparat_inozin_pranobeks_groprinozin/',
 }
+
+medication_urls_IRecommend = {
+    'Авиандр': 'https://irecommend.ru/content/sredstva-dlecheniya-nervnoi-sistemy-khimrar-aviandr',
+    'Андипал': 'https://irecommend.ru/content/tabletki-andipal-aveksima',
+    'Афобазол': 'https://irecommend.ru/content/lekarstvennyi-preparat-farmstandart-afobazol',
+    'Эсциталопрам': 'https://irecommend.ru/content/antidepressant-teva-estsitalopram-teva',
+    'Нейромексол': 'https://irecommend.ru/content/lekarstvennyi-preparat-moskovskii-endokrinnyi-zavod-neiromeksol',
+    'Тералиджен': 'https://irecommend.ru/content/uspokoitelnoe-sredstvo-uspokoitelnoe-sredstvo-teralidzhen',
+}
